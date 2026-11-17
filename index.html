@@ -1,1 +1,84 @@
 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Школа №219</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f7f9fc;color:#193454}
+header{padding:20px 7%;background:white;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.logo{font-size:22px;font-weight:bold;color:#194779}
+nav a{margin:8px;text-decoration:none;color:#52647b;font-size:13px}
+.hero{padding:85px 8%;background:linear-gradient(120deg,#e5effc,#f8faff)}
+.hero h1{font-size:clamp(38px,8vw,65px);line-height:1.12;margin:20px 0;color:#183d70}
+.hero h1 span{color:#5791cc}
+.hero p{max-width:550px;line-height:1.8;color:#63758d}
+.btn{display:inline-block;background:#194779;color:white;padding:14px 22px;border-radius:8px;text-decoration:none;margin-top:15px}
+section{padding:60px 8%}
+h2{font-size:32px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:25px}
+.card{background:white;padding:24px;border-radius:13px;box-shadow:0 5px 20px #19345412}
+.card h3{color:#3475b5}
+.card p{color:#718097;line-height:1.7;font-size:14px}
+.news{background:#edf3fa}
+.contact{background:#183d70;color:white}
+.contact p{color:#d6e2f0;line-height:1.8}
+footer{text-align:center;padding:25px;color:#8492a5;font-size:13px}
+@media(max-width:500px){header{gap:12px}nav a{margin:5px}.hero{padding:60px 7%}section{padding:45px 7%}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">ШКОЛА №219</div>
+<nav>
+<a href="#about">О школе</a>
+<a href="#news">Новости</a>
+<a href="#life">Жизнь</a>
+<a href="#contacts">Контакты</a>
+</nav>
+</header>
+
+<div class="hero">
+<p>ОБРАЗОВАНИЕ • РАЗВИТИЕ • БУДУЩЕЕ</p>
+<h1>Учимся.<br><span>Растём.</span><br>Создаём будущее.</h1>
+<p>Добро пожаловать на сайт школы №219! Здесь знания встречаются с творчеством, а каждый ученик открывает новые возможности.</p>
+<a class="btn" href="#about">Узнать о школе →</a>
+</div>
+
+<section id="about">
+<h2>О нашей школе</h2>
+<p>Школа №219 — пространство знаний, развития и новых возможностей. Мы помогаем ученикам раскрывать способности и достигать целей.</p>
+<div class="cards">
+<div class="card"><h3>📚 Образование</h3><p>Знания, исследования и самостоятельное мышление.</p></div>
+<div class="card"><h3>💡 Развитие</h3><p>Поддержка талантов, идей и инициатив.</p></div>
+<div class="card"><h3>🤝 Дружба</h3><p>Уважение, взаимопомощь и сотрудничество.</p></div>
+</div>
+</section>
+
+<section class="news" id="news">
+<h2>Новости школы</h2>
+<div class="cards">
+<div class="card"><h3>Школьные мероприятия</h3><p>Новости о праздниках, конкурсах и мероприятиях.</p></div>
+<div class="card"><h3>Наши достижения</h3><p>Истории успехов и побед учеников.</p></div>
+<div class="card"><h3>Объявления</h3><p>Важная информация для учеников и родителей.</p></div>
+</div>
+</section>
+
+<section id="life">
+<h2>Школьная жизнь</h2>
+<p>Дружба, творчество, совместные проекты, открытия и незабываемые моменты.</p>
+</section>
+
+<section class="contact" id="contacts">
+<h2>Контакты</h2>
+<p>Школа №219</p>
+<p>Адрес: добавьте адрес школы</p>
+<p>Телефон: добавьте официальный номер</p>
+<p>Email: добавьте школьную почту</p>
+</section>
+
+<footer>© 2026 Школа №219 · Образовательный проект</footer>
+</body>
+</html>
