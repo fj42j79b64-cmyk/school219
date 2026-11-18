@@ -36,6 +36,11 @@ margin:8px;
 text-decoration:none;
 color:#52647b;
 font-size:13px;
+transition:color 0.3s;
+}
+
+nav a:hover{
+color:#3475b5;
 }
 
 .hero{
@@ -65,6 +70,11 @@ padding:14px 22px;
 border-radius:8px;
 text-decoration:none;
 margin-top:15px;
+transition:background 0.3s;
+}
+
+.btn:hover{
+background:#3475b5;
 }
 
 section{
@@ -73,6 +83,7 @@ padding:60px 8%;
 
 h2{
 font-size:32px;
+color:#183d70;
 }
 
 .cards{
@@ -87,10 +98,17 @@ background:white;
 padding:24px;
 border-radius:13px;
 box-shadow:0 5px 20px #19345412;
+transition:transform 0.3s,box-shadow 0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 25px #19345420;
 }
 
 .card h3{
 color:#3475b5;
+margin-top:0;
 }
 
 .card p{
@@ -99,11 +117,39 @@ line-height:1.7;
 font-size:14px;
 }
 
+/* Жаңалықтар мен іс-шаралар */
+
 .news{
 background:#edf3fa;
 }
 
-/* Мектеп суреттері */
+.event-card{
+border-left:4px solid #5791cc;
+}
+
+.event-date{
+display:inline-block;
+background:#e5effc;
+color:#3475b5;
+padding:6px 11px;
+border-radius:6px;
+font-size:12px;
+font-weight:bold;
+margin-bottom:12px;
+}
+
+.event-card h3{
+font-size:18px;
+line-height:1.4;
+}
+
+.event-card p{
+font-size:14px;
+line-height:1.8;
+}
+
+/* Фотогалерея */
+
 .gallery-section{
 background:#f7f9fc;
 }
@@ -117,7 +163,7 @@ margin-top:25px;
 
 .gallery img{
 width:100%;
-height:250px;
+height:270px;
 object-fit:cover;
 border-radius:13px;
 box-shadow:0 5px 20px #19345418;
@@ -128,8 +174,14 @@ transition:transform 0.3s;
 transform:scale(1.03);
 }
 
+/* Байланыс */
+
 .contact{
 background:#183d70;
+color:white;
+}
+
+.contact h2{
 color:white;
 }
 
@@ -160,6 +212,7 @@ header{gap:12px}
 nav a{margin:5px}
 .hero{padding:60px 7%}
 section{padding:45px 7%}
+.gallery img{height:230px}
 }
 </style>
 </head>
@@ -172,18 +225,19 @@ section{padding:45px 7%}
 <nav>
 <a href="#about">Мектеп туралы</a>
 <a href="#news">Жаңалықтар</a>
-<a href="#gallery">Суреттер</a>
+<a href="#gallery">Фотогалерея</a>
 <a href="#contacts">Байланыс</a>
 </nav>
 </header>
 
 <!-- Басты бет -->
+
 <div class="hero">
 
 <p>БІЛІМ • ДАМУ • БОЛАШАҚ</p>
 
 <h1>
-ОҚИМЫЗ  ӨСЕМІЗ <br>
+ОҚИМЫЗ ӨСЕМІЗ <br>
 БОЛАШАҚТЫ ҚҰРАМЫЗ
 </h1>
 
@@ -196,6 +250,7 @@ section{padding:45px 7%}
 </div>
 
 <!-- Мектеп туралы -->
+
 <section id="about">
 
 <h2>Біздің мектеп туралы</h2>
@@ -224,50 +279,72 @@ section{padding:45px 7%}
 </div>
 </section>
 
-<!-- Жаңалықтар -->
+<!-- Мектеп жаңалықтары -->
+
 <section class="news" id="news">
 
 <h2>Мектеп жаңалықтары</h2>
 
+<p>Мектебімізде өткен маңызды іс-шаралар мен жаңалықтар.</p>
+
 <div class="cards">
 
-<div class="card">
-<h3>Іс-шаралар: • 2026 жылғы 14 қарашада №219 жалпы білім беретін мектепте ата-аналар арасында баскетболдан жарыс өтті. Ата-аналар топ болып ойнап, алаңда бір-біріне қолдау көрсетті.
-• №219 мектепте «Таза мектеп – таза қоғам» бағыты аясында «Жауапкершілік – адамгершілік қасиетінің көрінісі» тақырыбында тәрбие сағаттары өткізілді. Мақсаты – оқушыларды тазалыққа, адалдыққа және жауапкершілікке тәрбиелеу.
-• 2026 жылғы 9 қарашада 9–11 сынып оқушылары «Су ізі – әр адамның жауапты таңдауы» тақырыбындағы республикалық экологиялық сағатқа қатысты. Оқушылар суды үнемдеу мен су ресурстарын қорғаудың маңыздылығын білді.</h3>
-<p> </p>
+<div class="card event-card">
+
+<span class="event-date">14 ҚАРАША 2026</span>
+
+<h3>🏀 Ата-аналар арасындағы баскетбол жарысы</h3>
+
+<p>
+№219 мектепте ата-аналар арасында баскетболдан жарыс өтті. Қатысушылар топ болып ойнап, бір-біріне қолдау көрсетті.
+</p>
+
 </div>
 
-<div class="card">
-<h3>Біздің жетістіктер</h3>
-<p>Оқушыларымыздың жетістіктері мен жеңістері.</p>
+<div class="card event-card">
+
+<h3>🌿 Жауапкершілік – адамгершілік қасиетінің көрінісі</h3>
+
+<p>
+«Таза мектеп – таза қоғам» бағыты аясында тәрбие сағаттары өткізілді. Оқушылар тазалыққа, адалдыққа және жауапкершілікке тәрбиеленді.
+</p>
+
 </div>
 
-<div class="card">
-<h3>Хабарландырулар</h3>
-<p>Оқушылар мен ата-аналарға арналған маңызды ақпарат.</p>
+<div class="card event-card">
+
+<span class="event-date">9 ҚАРАША 2026</span>
+
+<h3>💧 Су ізі – әр адамның жауапты таңдауы</h3>
+
+<p>
+9–11 сынып оқушылары республикалық экологиялық сағатқа қатысты. Олар суды үнемдеу мен су ресурстарын қорғаудың маңыздылығын білді.
+</p>
+
 </div>
 
 </div>
 </section>
 
-<!-- Мектеп суреттері -->
+<!-- Фотогалерея -->
+
 <section class="gallery-section" id="gallery">
 
 <h2>Біздің мектептің келбеті</h2>
 
-<p>№219 мектептің сыртқы көрінісі </p>
+<p>№219 мектептің сыртқы көрінісі.</p>
 
 <div class="gallery">
 
-<img src="school1.jpg" alt="Мектептің сыртқы көрінісі">
+<img src="IMG_0637.jpeg" alt="Мектептің сыртқы көрінісі">
 
-<img src="school2.jpg" alt="Мектептің кіреберісі">
+<img src="IMG_0638.jpeg" alt="Мектептің көрінісі">
 
 </div>
 </section>
 
 <!-- Мектеп өмірі -->
+
 <section id="life">
 
 <h2>Мектептегі өмір</h2>
@@ -279,6 +356,7 @@ section{padding:45px 7%}
 </section>
 
 <!-- Байланыс -->
+
 <section class="contact" id="contacts">
 
 <h2>Байланыс</h2>
